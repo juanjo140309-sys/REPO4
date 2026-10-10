@@ -3,8 +3,8 @@
 // Por seguridad, evita publicar este archivo en repositorios públicos.
 $host = 'mysql-juancxo.alwaysdata.net';
 $db   = 'juancxo_articulosgit';
-$user = 'juaxho';
-$pass = 'CAMBIA_ESTA_CLAVE'; // Reemplaza por la contraseña de tu base de datos.
+$user = 'juancxo';
+$pass = 'juancho1422'; // Reemplaza por la contraseña de tu base de datos.
 
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
