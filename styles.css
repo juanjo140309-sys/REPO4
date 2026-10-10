@@ -1,0 +1,23 @@
+*{box-sizing:border-box} :root{--blue:#174ea6;--cyan:#dff7f4;--ink:#172b4d;--muted:#6b778c;--line:#e6eaf0;--bg:#f4f7fb;--white:#fff;--yellow:#ffd166;--red:#c0392b}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;font-size:15px}
+.topbar{display:flex;align-items:center;gap:14px;padding:24px max(22px,calc((100% - 1400px)/2));background:linear-gradient(115deg,#123b79,#176d9d);color:white}
+.brand-mark{width:48px;height:48px;display:grid;place-items:center;background:var(--yellow);color:#17345f;border-radius:14px;font-size:25px;font-weight:800}
+h1{font-size:24px;margin:0 0 4px}.topbar p{margin:0;color:#dceaf8}
+.container{max-width:1400px;margin:28px auto;padding:0 22px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-bottom:20px}
+.stat,.panel{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:0 4px 16px #1e3a5f08}
+.stat{padding:20px 22px}.stat span{display:block;color:var(--muted);font-size:13px;margin-bottom:8px}.stat strong{font-size:28px}
+.layout{display:grid;grid-template-columns:minmax(270px,330px) minmax(0,1fr);gap:20px;align-items:start}
+.panel{padding:22px;min-width:0}.panel-heading{margin-bottom:20px}.panel-heading h2{margin:0 0 6px;font-size:19px}.panel-heading p{margin:0;color:var(--muted);font-size:13px}
+label{display:block;font-weight:650;font-size:13px;margin:15px 0 7px}
+input{font:inherit;width:100%;min-width:0;padding:11px 12px;border:1px solid #cbd5e1;border-radius:9px;background:#fff;color:var(--ink);outline:none}
+input:focus{border-color:#2b78c5;box-shadow:0 0 0 3px #2b78c51a}
+.btn{border:0;border-radius:9px;padding:10px 14px;font:inherit;font-weight:650;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+.btn:focus-visible{outline:3px solid #8ac7ff;outline-offset:2px}.primary{background:var(--blue);color:#fff}.primary:hover{background:#103d85}.secondary{background:#edf2f8;color:#25405f}.danger{background:#fff0ee;color:var(--red)}.full{width:100%;margin-top:18px}.link-button{margin-top:9px}.small{font-size:12px;padding:7px 9px}
+.search{display:flex;gap:8px;margin-bottom:18px}.search input{flex:1}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}th{text-align:left;color:#52627a;background:#f6f8fb;font-weight:700;font-size:12px;white-space:nowrap}th,td{padding:13px 11px;border-bottom:1px solid var(--line)}tbody tr:hover{background:#fafcff}td small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.quantity{display:inline-block;background:var(--cyan);color:#17685e;font-weight:750;border-radius:7px;padding:5px 9px}.actions{display:flex;gap:6px;align-items:center}.actions form{margin:0}
+.empty{padding:45px 12px;text-align:center;color:var(--muted)}.empty span{display:block;font-size:35px;margin-bottom:10px}.empty strong{display:block;color:var(--ink)}.empty p{font-size:13px}
+.alert{padding:13px 16px;border-radius:10px;margin-bottom:16px}.success{background:#e6f7ed;color:#17653a}.error{background:#fff0ee;color:#9e2b20}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:25px 0 10px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.form-panel{order:0}.list-panel{order:1}}
+@media(max-width:560px){.container{padding:0 12px;margin-top:16px}.topbar{padding:18px 14px}h1{font-size:20px}.stats{gap:9px}.stat{padding:15px}.stat strong{font-size:23px}.panel{padding:15px}.search{flex-wrap:wrap}.search input{flex-basis:100%}.table-wrap table,.table-wrap thead,.table-wrap tbody,.table-wrap tr,.table-wrap td{display:block;width:100%}.table-wrap thead{display:none}.table-wrap tr{border:1px solid var(--line);border-radius:10px;margin-bottom:12px;padding:8px}.table-wrap td{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:9px 5px;text-align:right}.table-wrap td:before{content:attr(data-label);font-weight:700;color:var(--muted);text-align:left}.table-wrap td:first-child{display:block;text-align:left}.table-wrap td:first-child:before{display:block;margin-bottom:4px}.actions{justify-content:flex-end;flex-wrap:wrap}}
